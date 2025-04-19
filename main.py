@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
-import asyncio
 import argparse
-from playwright.async_api import async_playwright
-import trafilatura
-from typing import Optional, Literal
+import asyncio
 import sys
+from typing import Literal, Optional
+
+import trafilatura
+from playwright.async_api import async_playwright
 
 
 async def fetch_html(url: str) -> Optional[str]:
