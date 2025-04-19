@@ -8,3 +8,7 @@ tasks:
 
   install:
     - PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers uv run playwright install chromium
+
+  ch:
+    - ruff check --fix --extend-select I
+    - ruff format .
