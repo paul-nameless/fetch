@@ -1,0 +1,10 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  default:
+    - PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers uv run main.py -o md {{.CLI_ARGS}}
+
+  install:
+    - PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers uv run playwright install chromium
