@@ -3,5 +3,9 @@ name = "fetch"
 version = "0.1.0"
 description = "Fetch data from javascrpit web pages"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = ["playwright>=1.51.0", "trafilatura>=2.0.0"]
+requires-python = ">=3.10"
+dependencies = [
+ "mcp[cli]>=1.6.0",
+ "playwright>=1.51.0",
+ "trafilatura>=2.0.0",
+]
